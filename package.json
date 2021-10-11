@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "element-ui": "^2.15.6",
+    "vue-property-decorator": "^9.1.2",
+    "SvgIcon": "file:./packages/SvgIcon"
+  }
+}

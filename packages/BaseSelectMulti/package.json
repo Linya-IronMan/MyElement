@@ -1,0 +1,32 @@
+{
+  "name": "baseselectmulti",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "linya <cdthanye32@163.com>",
+  "homepage": "https://github.com/Linya-IronMan/MyElement#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linya-IronMan/MyElement.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Linya-IronMan/MyElement/issues"
+  },
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}
