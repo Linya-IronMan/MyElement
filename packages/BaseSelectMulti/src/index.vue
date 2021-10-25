@@ -65,7 +65,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop, ModelSync, Watch } from "vue-property-decorator";
-import  { IconCheckBig }  from "SvgIcon";
+import  IconCheckBig from "../../../assets/SvgIcon/IconCheckBig.vue";
 
 interface OptionItem {
   label: string;
@@ -144,7 +144,7 @@ export default class extends Vue {
   position: relative;
   margin-right: 10px;
   &:hover {
-    background: $background-color-base;
+    background: gray;
   }
   .content {
     display: flex;

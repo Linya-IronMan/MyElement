@@ -5,11 +5,11 @@
     "lerna": "^4.0.0"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "website"
   ],
   "dependencies": {
     "element-ui": "^2.15.6",
-    "vue-property-decorator": "^9.1.2",
-    "SvgIcon": "file:./packages/SvgIcon"
+    "vue-property-decorator": "^9.1.2"
   }
 }
