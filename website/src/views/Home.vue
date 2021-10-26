@@ -7,8 +7,8 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import BaseSelectMulti from "mycomponent"
-console.log(BaseSelectMulti, "BaseSelectMulti ===>>>")
+import BaseSelectMulti from "baseselectmulti"
+
 @Component({
   components: {
     BaseSelectMulti

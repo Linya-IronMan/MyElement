@@ -27,6 +27,7 @@
     "url": "https://github.com/Linya-IronMan/MyElement/issues"
   },
   "dependencies": {
+    "element-ui": "^2.15.6",
     "vue": "^2.6.14"
   }
 }
