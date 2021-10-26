@@ -66,6 +66,7 @@
 <script lang="ts">
 import { Component, Vue, Prop, ModelSync, Watch } from "vue-property-decorator";
 import  IconCheckBig from "../../../assets/SvgIcon/IconCheckBig.vue";
+import { Select, Option, Button } from "element-ui";
 
 interface OptionItem {
   label: string;
@@ -76,6 +77,9 @@ interface OptionItem {
   name: "BaseSelectMultiple",
   components: {
     IconCheckBig,
+    ElSelect: Select,
+    ElOption: Option,
+    "el-button": Button
   },
 })
 export default class extends Vue {

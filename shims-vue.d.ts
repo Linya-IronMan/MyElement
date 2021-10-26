@@ -3,4 +3,4 @@ declare module '*.vue' {
   export default Vue
 }
 
-declare module "baseselectmulti"
+declare module "@sdfz/baseselectmulti"
