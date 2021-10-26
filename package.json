@@ -6,7 +6,8 @@
   },
   "workspaces": [
     "packages/*",
-    "website"
+    "website",
+    "websitevuepress"
   ],
   "dependencies": {
     "element-ui": "^2.15.6",

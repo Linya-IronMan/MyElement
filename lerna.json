@@ -1,6 +1,8 @@
 {
   "packages": [
-    "packages/*"
+    "packages/*",
+    "website",
+    "websitevuepress"
   ],
   "version": "independent",
   "nnpmClient": "yarn",
