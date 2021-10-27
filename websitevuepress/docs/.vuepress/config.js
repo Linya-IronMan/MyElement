@@ -1,25 +1,37 @@
 module.exports = {
-  theme: '',
-  title: 'VuePress + Element',
-  description: 'VuePress搭建Element的组件库文档教程示例代码',
-  base: '/',
-  port: '8080',
+  theme: "",
+  title: "VuePress + Element",
+  description: "VuePress搭建Element的组件库文档教程示例代码",
+  base: "/",
+  port: "8080",
   themeConfig: {
     nav: [
       {
-        text: '首页',
-        link: '/'
+        text: "首页",
+        link: "/",
       },
       {
-        text: '组件',
-        link: '/comps/'
-      }
+        text: "组件",
+        link: "/comps/",
+      },
     ],
-    sidebar: { // 配置侧边栏部分
-      '/comps/': ['/comps/', '/comps/select.md']
-    }
+    sidebar: {
+      // 配置侧边栏部分
+      "/comps/": ["/comps/", "/comps/select.md"],
+    },
   },
   head: [],
-  plugins: ['demo-container'], // 配置插件
-  markdown: {}
-}
+  plugins: [
+    "demo-container",
+    [
+      "vuepress-plugin-typescript",
+      {
+        tsLoaderOptions: {
+          // ts-loader 的所有配置项
+        },
+      },
+    ],
+  ], // 配置插件
+  markdown: {},
+  
+};

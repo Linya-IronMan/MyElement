@@ -4,18 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@sdfz/baseselectmulti": "^1.0.0",
     "@sdfz/mycomponent": "^1.0.0",
     "core-js": "2",
     "element-ui": "^2.15.6",
     "install": "^0.13.0",
+    "node-sass": "^6.0.1",
     "npm": "^8.1.1",
+    "sass-loader": "10.0.0",
     "vuepress-plugin-demo-container": "^0.2.0"
   },
   "devDependencies": {
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.2.0",
-    "vuepress": "^1.8.2"
+    "typescript": "^4.4.4",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-typescript": "^0.3.1"
   },
   "scripts": {
     "dev": "vuepress dev docs",

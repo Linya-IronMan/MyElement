@@ -54,13 +54,21 @@ select 基础用法 +1
 
 ```html
 <template>
-  <BaseSelectMulti> </BaseSelectMulti>
+  <BaseSelectMulti
+    v-model="showedColSelected"
+    :options="showedColOptions"
+    selectName="展示列"
+    :selectCountMax="6"
+    :showDelIcon="false"
+  >
+  </BaseSelectMulti>
 </template>
 
 <script>
   export default {
     data() {
       return {
+        showedColSelected: [],
         options: [
           {
             value: "选项1",
@@ -70,6 +78,18 @@ select 基础用法 +1
             value: "选项2",
             label: "双皮奶",
           },
+        ],
+        showedColOptions: [
+          { label: "项目名称", value: "项目名称", disabled: true },
+          { label: "任务类型", value: "任务类型" },
+          { label: "最优指标", value: "最优指标" },
+          { label: "训练得分", value: "训练得分" },
+          { label: "验证得分", value: "验证得分" },
+          { label: "服务状态", value: "服务状态" },
+          { label: "标签", value: "标签" },
+          { label: "训练时长", value: "训练时长" },
+          { label: "算子数", value: "算子数" },
+          { label: "实验成功率", value: "实验成功率" },
         ],
         value: "",
       };
@@ -84,3 +104,4 @@ select 基础用法 +1
 ```
 
 :::
+
