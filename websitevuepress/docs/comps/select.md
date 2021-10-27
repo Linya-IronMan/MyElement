@@ -54,7 +54,7 @@ select 基础用法 +1
 
 ```html
 <template>
-  <el-button @click="click"> click </el-button>
+  <BaseSelectMulti> </BaseSelectMulti>
 </template>
 
 <script>

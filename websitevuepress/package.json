@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@sdfz/baseselectmulti": "^1.0.0",
+    "@sdfz/mycomponent": "^1.0.0",
     "core-js": "2",
     "element-ui": "^2.15.6",
     "install": "^0.13.0",

@@ -65,8 +65,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop, ModelSync, Watch } from "vue-property-decorator";
-import  IconCheckBig from "../../../assets/SvgIcon/IconCheckBig.vue";
-import { Select, Option, Button } from "element-ui";
+import IconCheckBig from "./IconCheckBig.vue";
 
 interface OptionItem {
   label: string;
@@ -74,16 +73,12 @@ interface OptionItem {
 }
 
 @Component({
-  name: "BaseSelectMultiple",
+  name: "BaseSelectMulti",
   components: {
     IconCheckBig,
-    ElSelect: Select,
-    ElOption: Option,
-    "el-button": Button
   },
 })
-export default class extends Vue {
-
+export default class BaseSelectMulti extends Vue {
   @ModelSync("SelectedOptions", "update:selectedoptions", {
     type: Array,
   })
