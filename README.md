@@ -40,7 +40,6 @@ lerna 命令查询: `lerna help | lerna add help`
 开发的组件进行本地测试的时候，可以在 vuepress 中引入并进行测试。
 vuepress 目前安装了 scss ts 相关依赖，如果组件中使用了其他第三方依赖，除了在组件包中进行引入，还需要在vuepress中引入（生产环境下引用的是打包之后的文件，无需如此）
 
-
 ## 组件开发
 
 ### 创建组件：`lerna create`
