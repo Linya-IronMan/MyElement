@@ -2,6 +2,8 @@
   "name": "root",
   "private": true,
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-lerna-changelog": "^2.0.3",
     "lerna": "^4.0.0"
   },
   "workspaces": [
@@ -14,13 +16,21 @@
     "element-ui": "^2.15.6",
     "vue-property-decorator": "^9.1.2"
   },
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
   "changelog": {
     "repo": "Linya-IronMan/MyElement",
     "labels": {
-      "(enhancement)": ":rocket: Enhancement",
-      "(bug)": ":bug: Bug Fix",
-      "(docs)": "Refine Doc",
-      "(feat)": "New Feature"
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "docs": "Refine Doc",
+      "feat": "New Feature"
     },
     "cacheDir": ".changelog"
   }
