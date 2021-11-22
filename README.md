@@ -17,7 +17,7 @@
   - [ ] 各`package` 的`README.md`文件处于自己的包内而不是集合写在vuepress下 
   - [ ] vuepress识别makrdown的插件开发 PS：参考Element3/lerna官网的包管理方式
 - [ ] 文档
-  - [ ] 添加新组件流程指导文件
+  - [x] 添加新组件流程指导文件
   - [ ] lerna 常用命令使用文档
   - [ ] lerna changelog 生成方式
   - [ ] lerna 基础使用
