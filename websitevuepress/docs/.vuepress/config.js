@@ -1,4 +1,5 @@
 const mdList = ["log.md", "开发指南.md", "安装.md"];
+
 module.exports = {
   theme: "",
   title: "VuePress + Element",
