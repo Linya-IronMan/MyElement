@@ -1,3 +1,4 @@
+const mdList = ["log.md", "开发指南.md", "安装.md"];
 module.exports = {
   theme: "",
   title: "VuePress + Element",
@@ -17,7 +18,7 @@ module.exports = {
     ],
     sidebar: {
       // 配置侧边栏部分
-      "/comps/": ["/comps/", "/comps/select.md"],
+      "/comps/": mdList.map((mdname) => `/comps/${mdname}`),
     },
   },
   head: [],
@@ -33,5 +34,4 @@ module.exports = {
     ],
   ], // 配置插件
   markdown: {},
-  
 };
