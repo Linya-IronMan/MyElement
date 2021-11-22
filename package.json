@@ -15,7 +15,7 @@
     "vue-property-decorator": "^9.1.2"
   },
   "changelog": {
-    "repo": "@sdfz",
+    "repo": "Linya-IronMan/MyElement",
     "labels": {
       "enhancement": ":rocket: Enhancement",
       "bug": ":bug: Bug Fix",
