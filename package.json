@@ -13,5 +13,15 @@
   "dependencies": {
     "element-ui": "^2.15.6",
     "vue-property-decorator": "^9.1.2"
+  },
+  "changelog": {
+    "repo": "@sdfz",
+    "labels": {
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "doc": "Refine Doc",
+      "feat": "New Feature"
+    },
+    "cacheDir": ".changelog"
   }
 }

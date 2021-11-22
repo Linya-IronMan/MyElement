@@ -29,5 +29,6 @@
   "dependencies": {
     "element-ui": "^2.15.6",
     "vue": "^2.6.14"
-  }
+  },
+  "gitHead": "6281549f934c997b63d6857bea9856794b4b6117"
 }
