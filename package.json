@@ -17,10 +17,10 @@
   "changelog": {
     "repo": "Linya-IronMan/MyElement",
     "labels": {
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix",
-      "doc": "Refine Doc",
-      "feat": "New Feature"
+      "(enhancement)": ":rocket: Enhancement",
+      "(bug)": ":bug: Bug Fix",
+      "(docs)": "Refine Doc",
+      "(feat)": "New Feature"
     },
     "cacheDir": ".changelog"
   }
