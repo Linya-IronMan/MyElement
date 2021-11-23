@@ -17,17 +17,6 @@
     "vue-property-decorator": "^9.1.2"
   },
   "scripts": {
-    "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
-  },
-  "changelog": {
-    "repo": "Linya-IronMan/MyElement",
-    "labels": {
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix",
-      "docs": "Refine Doc",
-      "feat": "New Feature"
-    },
-    "cacheDir": ".changelog"
   }
 }
