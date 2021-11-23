@@ -19,7 +19,7 @@
     "vuepress-plugin-typescript": "^0.3.1"
   },
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --no-clear-screen",
     "build": "vuepress build docs"
   },
   "gitHead": "6281549f934c997b63d6857bea9856794b4b6117"
