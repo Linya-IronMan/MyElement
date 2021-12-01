@@ -47,15 +47,13 @@
             <span
               class="option-label"
               :style="{
-                color: new Set(selectedOptions).has(option)
-                  ? variables.colorPrimary
-                  : '',
+                color: new Set(selectedOptions).has(option) ? '#409EFF' : '',
               }"
               >{{ option.label }}</span
             >
             <IconCheckBig
               v-if="new Set(selectedOptions).has(option)"
-              :fill="variables.colorPrimary"
+              fill="#409EFF"
             ></IconCheckBig>
           </li>
         </ul>

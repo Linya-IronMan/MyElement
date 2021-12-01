@@ -1,10 +1,10 @@
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-import MyComponent from "@sdfz/mycomponent";
+import BaseseSelectMulti from "@sdfz/baseselectmulti";
 
 export default async ({ Vue }) => {
   if (typeof process === "undefined") {
     Vue.use(ElementUI);
-    Vue.use(MyComponent);
+    Vue.use(BaseseSelectMulti);
   }
 };

@@ -17,7 +17,7 @@ const plugins = [
   nodeResolve(),
   commonjs(),
   replace({
-    "process.env.NODE_ENV": JSON.stringify("production"),
+    "process.env.NODE_ENV": "production",
   }),
   vue(),
   typescript({
