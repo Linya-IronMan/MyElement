@@ -1,3 +1,5 @@
+@import "@sdfz/component-style";
+
 .BaseSelectMultiple-btn {
     border: unset;
     color: #000 !important;
@@ -5,7 +7,7 @@
     margin-right: 10px;
 
     &:hover {
-        background: gray;
+        background: $background-color-base;
     }
 
     .content {

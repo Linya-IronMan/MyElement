@@ -1,11 +1,11 @@
 {
-  "name": "@sdfz/baseselectmulti",
-  "version": "1.0.2-alpha.0",
-  "description": "> TODO: description",
+  "name": "@sdfz/component-style",
+  "version": "1.0.0",
+  "description": "样式库",
   "author": "linya <cdthanye32@163.com>",
   "homepage": "https://github.com/Linya-IronMan/MyElement#readme",
   "license": "ISC",
-  "main": "index.js",
+  "main": "index.scss",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -25,11 +25,5 @@
   },
   "bugs": {
     "url": "https://github.com/Linya-IronMan/MyElement/issues"
-  },
-  "dependencies": {
-    "@sdfz/component-style": "^1.0.0",
-    "element-ui": "^2.15.6",
-    "vue": "^2.6.14"
-  },
-  "gitHead": "6281549f934c997b63d6857bea9856794b4b6117"
+  }
 }

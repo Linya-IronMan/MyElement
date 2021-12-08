@@ -1,0 +1,222 @@
+/* Element Variables */
+
+// Override Element UI variables
+$--color-primary: #2f72ff;
+$--color-success: #39b54a;
+$--color-warning: #f77d05;
+$--color-danger: #f46464;
+$--color-info: #a5a5a5;
+$--color-text-regular: #5c6975;
+$--border-color-light: #c3ced9;
+$--border-color-lighter: #e6ecf1;
+
+// Icon font path, required
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+// Apply overrided variables in Element UI
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-table-column--selection .cell {
+  padding: 0 10px;
+}
+
+.el-table {
+  font-size: 12px;
+  .el-table__row.icon-hover {
+    td {
+      background-color: #ffffff !important;
+    }
+  }
+  th {
+    padding: 0;
+    color: $color-text-primary;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.22) !important;
+    .cell {
+      padding: 0 $S3;
+      line-height: 36px;
+    }
+  }
+  td {
+    padding: 0;
+    color: #908c8c;
+    border-color: rgba(112, 112, 112, 0.22);
+    .cell {
+      padding: 0 $S3;
+      line-height: 35px;
+    }
+  }
+  .el-table__empty-block {
+    min-height: 36px;
+    .el-table__empty-text {
+      line-height: 36px;
+    }
+  }
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #fafafa;
+}
+
+.el-table--border {
+  border-color: rgba(112, 112, 112, 0.22);
+}
+
+.el-table .sort-caret {
+  border: solid 4px transparent;
+}
+
+.el-table .sort-caret.ascending {
+  top: 6px;
+}
+
+.el-table .sort-caret.descending {
+  bottom: 9px;
+}
+
+.el-table .descending .sort-caret.descending {
+  border-top-color: #333333;
+}
+.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: #333333;
+}
+
+.el-dropdown {
+  font-size: 12px;
+  height: 32px;
+  .el-dropdown-link {
+    cursor: pointer;
+    color: $color-text-primary;
+    .IconDropdown {
+      vertical-align: text-bottom;
+      margin-left: $S1;
+    }
+    .el-cascader {
+      position: absolute;
+      left: 0;
+      right: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.el-dropdown-menu {
+  margin-top: $S2 !important;
+  padding: $S2 0;
+  max-height: 400px;
+  overflow-y: auto;
+  .el-dropdown-menu__item {
+    position: relative;
+    padding: 0 $S9 0 $S5;
+    min-width: 100px;
+    line-height: 36px;
+    color: $color-text-primary;
+    .el-icon-check {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      margin-right: 0;
+    }
+  }
+  .el-dropdown-menu__item:hover {
+    background-color: #edeff2;
+  }
+  .el-dropdown-menu__item:focus,
+  .el-dropdown-menu__item:not(.is-disabled):hover {
+    color: $color-text-primary;
+  }
+  .el-dropdown-menu__item.red {
+    color: $color-danger !important;
+  }
+  .el-dropdown-menu__item.active {
+    color: $color-primary !important;
+    .el-icon-check {
+      display: inline;
+    }
+  }
+  .popper__arrow {
+    display: none;
+  }
+}
+
+.el-message {
+  background-color: #333f52;
+  border: none;
+  padding: 10px $S4;
+  .el-message__content {
+    color: $color-white;
+  }
+}
+
+.el-tabs {
+  .el-tabs__header {
+    margin-bottom: $S7;
+    .el-tabs__nav-scroll {
+      padding: 0;
+      .el-tabs__active-bar {
+        display: none;
+      }
+      .el-tabs__item {
+        font-size: 12px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 40px 0 0;
+        color: #515151;
+      }
+      .el-tabs__item.is-active {
+        color: $color-text-primary;
+        font-weight: 600;
+      }
+    }
+    .el-tabs__nav-wrap::after {
+      height: 1px;
+      background-color: #e6ecf1;
+    }
+  }
+}
+
+.el-tooltip__popper {
+  padding: 6px 10px;
+  max-width: 400px;
+}
+
+.el-popper {
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.el-select-dropdown {
+  border: none;
+  z-index: 999999 !important;
+}
+
+.el-empty {
+  height: 100%;
+  padding: 0;
+  .el-empty__description {
+    margin: 0;
+  }
+}
+
+.el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled) {
+  box-shadow: none;
+}
+
+.el-tooltip__popper.is-dark {
+  background-color: #7d818a;
+}
+
+.el-tooltip__popper[x-placement^="top"] .popper__arrow {
+  border-top-color: #7d818a !important;
+}
+
+.el-tooltip__popper[x-placement^="top"] .popper__arrow::after {
+  border-top-color: #7d818a !important;
+}
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  theme: $--color-primary;
+}

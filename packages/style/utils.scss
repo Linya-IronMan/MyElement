@@ -1,0 +1,166 @@
+.flex {
+  display: flex;
+}
+.flex-row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-row-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-row-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.inline-flex-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.text-lineThrough {
+  text-decoration: line-through;
+}
+
+.text-link {
+  &:hover {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+}
+
+.text-color-primary {
+  color: $color-primary;
+}
+
+.text-color-danger {
+  color: $color-danger;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.dot-red {
+  background: $color-danger;
+}
+.dot-grey {
+  background: #d9d9d9;
+}
+.dot-green {
+  background: $color-success;
+}
+.dot-blue {
+  background: $color-primary;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: fade 1000ms infinite;
+  -webkit-animation: fade 1000ms infinite;
+  text-align: center;
+}
+
+.text-main-1 {
+  font-size: 14px;
+  font-family: PingFang SC, PingFang SC-Semibold;
+  font-weight: 600;
+  color: #515151;
+}
+
+// clipboard 设置
+svg.none-event {
+  pointer-events: none;
+}
+
+.clearElCollapse {
+  .el-collapse {
+    border: none;
+    .el-collapse-item__header {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .el-collapse-item__wrap {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+// 鼠标悬停时出现 滚动条，需要计算内容高度，在会出现滚动条的时候添加类名，否则会抖动
+// 不适合本身就有 padding 设置的元素
+.scroller-optimize {
+  overflow: hidden !important;
+  padding-right: $scroller-bar-width;
+  &:hover {
+    padding-right: 0 !important;
+    overflow: auto !important;
+  }
+}
+.el-dialog__wrapper.center > .el-dialog {
+  border-radius: 10px;
+  margin-top: 50vh !important;
+  transform: translateY(-50%);
+}
