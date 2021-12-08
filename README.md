@@ -19,7 +19,8 @@
 - [ ] 文档
   - [x] 添加新组件流程指导文件
   - [ ] lerna 常用命令使用文档
-  - [ ] lerna changelog 生成方式
+  - [x] lerna changelog 生成方式
+  - [ ] (**bug**) convention-changelog 生成的文档没有日期，并且没有按照时间先后排列
   - [ ] lerna 基础使用
   - [ ] 组件库结构分析
   - [ ] `package.json` 各字段作用
@@ -141,4 +142,5 @@ const components = {
 1. `8d14554 test(独立scss)`: 单组件中scss样式
 独立存在，组件中通过. @import 引入 scss
 2. `d3192d0 test(独立scss)`: 上次是scss引入方式错误，@import "./style.scss"
-3. 建立全局引用的样式包，
+3. 建立全局引用的样式包，成功
+   1. **问题：**`lerna add` 向 baseselect中添加包的时候，没有在根 `node_modules` 下生成软连接。需要删除 `node_modules` 目录，然后重新安装依赖的时候，才会建立软连接。
