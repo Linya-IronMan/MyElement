@@ -135,5 +135,5 @@ export default class BaseSelectMulti extends Vue {
 }
 </script>
 <style lang="scss">
-@import url("./style.scss");
+@import "./style.scss";
 </style>
